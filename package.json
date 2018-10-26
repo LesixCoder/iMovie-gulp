@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "dev": "gulp serve",
-    "clean": "gulp clean"
+    "clean": "gulp clean",
+    "build": "gulp clean && gulp template && gulp styl && gulp ts && gulp static"
   },
   "keywords": [],
   "author": "fordreamxkhl@gmail.com",

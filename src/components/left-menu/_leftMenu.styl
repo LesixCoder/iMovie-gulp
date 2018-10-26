@@ -1,0 +1,44 @@
+@import '../_helper.styl'
+
+menu
+    position: fixed
+    left: 0
+    top: 0
+    bottom: 0
+    overflow-x: hidden;
+    overflow-y: auto;
+menu .inner
+    display: flex
+    width: 20rem
+    min-height: 100vh;
+    align-items: center
+    flex-direction: column
+    borderSolid(right)
+    .logo
+    .user-infomation
+        width: 100%
+        margin: 2rem 0 0
+        padding-bottom: 2rem
+        borderSolid(bottom)
+        display: flex;
+        justify-content: center;
+    img
+        height: 10rem
+        object-fit: cover
+
+    .nav-link
+        padding: 2rem
+        li
+            line-height: 3
+            a
+                font-size: 1.2rem
+                font-weight: 100
+                letter-spacing: 2px;
+
+    li
+        line-height: 3
+        span.label
+            margin-right: .5rem
+        a
+            font-size: 1rem
+            font-weight: 300

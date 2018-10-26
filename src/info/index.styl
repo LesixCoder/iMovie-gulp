@@ -1,0 +1,55 @@
+@import '../components/left-menu/_leftMenu.styl'
+@import '../components/title/_title.styl'
+@import '../global.styl'
+
+.title h3
+    color: #8FB0EA;
+
+.info
+    border-bottom: 1px solid solidColor;
+    display: flex;
+    .post
+        max-width: 45%;
+        padding: 3em;
+        border-right: 1px solid solidColor;
+        text-align: center;
+        img
+            max-width: 100%;
+            height: auto;
+    .content
+        width: 100%;
+        ul
+            width: 100%;
+        li
+            color: #7e7e7e;
+            font-weight: 100;
+            font-size: 1.7em;
+            height: 3em;
+            line-height: 3em;
+            padding-left: 3em;
+            &:not(:last-child)
+                border-bottom: 1px solid solidColor;
+
+.desc
+    padding: 1.5em 3em;
+    color: #7e7e7e;
+    font-size: 1.5em;
+    line-height: 2;
+    borderSolid(bottom)
+
+.download
+    padding: 2em 3em;
+    small
+        font-size: .7em;
+        margin-bottom: 2em;
+    h4
+        font-size: 1.7em;
+        margin-bottom: .5em;
+    pre
+        width: 100%;
+        height: auto;
+        white-space: normal;
+        overflow: auto;
+        background: #eee;
+        padding: 1em;
+        margin-bottom: 1em;

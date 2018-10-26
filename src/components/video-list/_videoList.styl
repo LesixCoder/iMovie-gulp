@@ -1,0 +1,51 @@
+.pull-right
+    float: right
+
+.video-list
+    margin: 1.5em 2em
+    li article
+        background: #F7F7FF;
+        overflow: hidden
+        display: flex
+        margin-bottom: 2em
+        .info
+            flex-grow: 1
+            padding: 2em
+            a
+                display: block;
+                margin-bottom: .3em
+                font-size: 2em
+                color: titleColor
+                &:hover
+                    color: aHoverColor
+            p
+                color: #7E7E7E
+                margin-bottom: .3em
+
+                &.desc
+                    font-size: 1.3em
+                    line-height: 2.1
+                    max-height: 6em
+                    overflow: hidden
+                    position:relative
+
+                    &::after
+                        content:"...";
+                        font-weight:bold;
+                        position:absolute;
+                        bottom:0;
+                        right:0;
+                        padding:0 20px 1px 45px;
+                        background:url(http://css88.b0.upaiyun.com/css88/2014/09/ellipsis_bg.png) repeat-y;
+
+
+        .post
+            max-width: 200px
+            display: flex
+            align-items: center
+            justify-content: right
+            img
+                height: 100%
+                max-height: 18em
+                width: auto
+                object-fit: contain

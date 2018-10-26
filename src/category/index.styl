@@ -1,0 +1,28 @@
+@import '../components/left-menu/_leftMenu.styl'
+@import '../components/title/_title.styl'
+@import '../global.styl'
+
+.cate
+    padding: 3em 3em 0;
+    h3
+        font-size: 2.5em;
+        font-weight: 100;
+        margin-bottom: .5em;
+
+    ul
+        display: flex;
+        flex-wrap: wrap;
+        li
+            width: 33.3%;
+            text-align: center;
+            &:not(:last-of-type)
+                margin-bottom: 2em;
+            a
+                display: inline-block;
+                width: 15em;
+                height: 3em;
+                line-height: 3em;
+                background: #F7F7FF;
+                font-size: 2em
+                font-weight: 100;
+
